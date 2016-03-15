@@ -847,27 +847,26 @@ Most of the content and examples in this guide are based off of [John Papa's](ht
 	 * @name SomeService
 	 * @desc Main application Controller
 	 */
-	function SomeService (SomeService) {
-	
-	  return {
-	    doSomething: doSomething
-	  };
-	  
-	  /**
-	   * @name doSomething
-	   * @desc Does something awesome
-	   * @param {Number} x - First number to do something with
-	   * @param {Number} y - Second number to do something with
-	   * @returns {Number}
-	   */
-	  function doSomething(x, y) {
-		return x * y;
-	  };
-
-	}
 	angular
 	  .module('app')
-	  .factory('SomeService', SomeService);
+	  .factory('SomeService', function() {
+	
+		  return {
+		    doSomething: doSomething
+		  };
+		  
+		  /**
+		   * @name doSomething
+		   * @desc Does something awesome
+		   * @param {Number} x - First number to do something with
+		   * @param {Number} y - Second number to do something with
+		   * @returns {Number}
+		   */
+		  function doSomething(x, y) {
+			return x * y;
+		  };
+
+	  });
 	```
 
 **[Back to top](#table-of-contents)**

@@ -658,7 +658,7 @@ Most of the content and examples in this guide are based off of [John Papa's](ht
 
 ## Routing with Promises
 
-  - **Resolve all data upon a controller may depend in the `resolve` method of `$routeProvider`**.
+  - **Resolve all data on which a controller may depend in the `resolve` method of `$routeProvider`**.
   
 	 ```javascript
 	 /* avoid */

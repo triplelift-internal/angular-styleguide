@@ -848,7 +848,11 @@ Most of the content and examples in this guide are based off of [John Papa's](ht
 	 * @desc Main application Controller
 	 */
 	function SomeService (SomeService) {
-
+	
+	  return {
+	    doSomething: doSomething
+	  };
+	  
 	  /**
 	   * @name doSomething
 	   * @desc Does something awesome
@@ -856,14 +860,14 @@ Most of the content and examples in this guide are based off of [John Papa's](ht
 	   * @param {Number} y - Second number to do something with
 	   * @returns {Number}
 	   */
-	  this.doSomething = function (x, y) {
+	  function doSomething(x, y) {
 		return x * y;
 	  };
 
 	}
 	angular
 	  .module('app')
-	  .service('SomeService', SomeService);
+	  .factory('SomeService', SomeService);
 	```
 
 **[Back to top](#table-of-contents)**

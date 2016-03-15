@@ -711,7 +711,7 @@ Most of the content and examples in this guide are based off of [John Papa's](ht
 	 - If interested in increasing spead of the View load (and do not need to potentially cancel the state), consider the controller `activate` technique described below instead.
 
     *Why?*
-    - You can conditionally cancel a route before the controller is activated inside the route resolver.
+    - You can conditionally cancel a route inside the route resolver before the controller is activated.
     - *Most importantly*, A controller may depend on data retrieved asynchronously. Resolving this data prior to loading the controller simplifies the controller logic tremendously. It also places data dependencies all in once place in the "index" of the application - e.g. `app.js` - and makes it easier to reason about data flow.
 
   - **If you must include async logic in controllers, keep such start-up logic to an `activate` function**.

@@ -656,7 +656,7 @@ Most of the content and examples in this guide are based off of [John Papa's](ht
 **[Back to top](#table-of-contents)**
 
 
-## Routing with Promises
+## Routing with promises
 
   - **Resolve all data on which a controller may depend in the `resolve` method of `$routeProvider`**.
   

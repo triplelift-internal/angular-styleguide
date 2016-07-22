@@ -10,7 +10,7 @@ A standardized approach for developing Angular applications at triplelift. This 
 **Rules are in bold** at the top of each bullet point, with example code shortly thereafter, and the "why" follows after that. The idea is that the rule is the most important - a standard approach has merits in its own right - and should be the most accessible. Code clarifying or even solidifying the rule comes next. If interested, explanations of the rule are provided after that, with the most significant explanation attached to the bullet point prefixed with "*Most importantly*".  
 
 #### Community
-Most of the content and examples in this guide are based off of [John Papa's](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) and [Todd Motto's](https://github.com/toddmotto/angular-styleguide) style guides. Check their's out to see the originals and to compare thoughts.
+Most of the content and examples in this guide are based off of [John Papa's](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) and [Todd Motto's](https://github.com/toddmotto/angular-styleguide) style guides. Check theirs out to see the originals and to compare thoughts.
 
 
 ## Table of Contents
